@@ -86,12 +86,12 @@ clean: CMakeFiles/memcheck.dir/clean
 CMakeFiles/CyberPongModern.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target CyberPongModern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target CyberPongModern"
 .PHONY : CMakeFiles/CyberPongModern.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CyberPongModern.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CyberPongModern.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles 0
 .PHONY : CMakeFiles/CyberPongModern.dir/rule
@@ -103,7 +103,7 @@ CyberPongModern: CMakeFiles/CyberPongModern.dir/rule
 # codegen rule for target.
 CMakeFiles/CyberPongModern.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target CyberPongModern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Finished codegen for target CyberPongModern"
 .PHONY : CMakeFiles/CyberPongModern.dir/codegen
 
 # clean rule for target.
@@ -123,7 +123,7 @@ CMakeFiles/memcheck.dir/all: CMakeFiles/CyberPongModern.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/memcheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles 0
 .PHONY : CMakeFiles/memcheck.dir/rule

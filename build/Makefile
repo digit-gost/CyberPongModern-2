@@ -166,6 +166,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/core/AssetManager.o: src/core/AssetManager.cpp.o
+.PHONY : src/core/AssetManager.o
+
+# target to build an object file
+src/core/AssetManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o
+.PHONY : src/core/AssetManager.cpp.o
+
+src/core/AssetManager.i: src/core/AssetManager.cpp.i
+.PHONY : src/core/AssetManager.i
+
+# target to preprocess a source file
+src/core/AssetManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.i
+.PHONY : src/core/AssetManager.cpp.i
+
+src/core/AssetManager.s: src/core/AssetManager.cpp.s
+.PHONY : src/core/AssetManager.s
+
+# target to generate assembly for a file
+src/core/AssetManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.s
+.PHONY : src/core/AssetManager.cpp.s
+
 src/core/Game.o: src/core/Game.cpp.o
 .PHONY : src/core/Game.o
 
@@ -238,6 +262,126 @@ src/entities/Paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.s
 .PHONY : src/entities/Paddle.cpp.s
 
+src/states/StateGame.o: src/states/StateGame.cpp.o
+.PHONY : src/states/StateGame.o
+
+# target to build an object file
+src/states/StateGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o
+.PHONY : src/states/StateGame.cpp.o
+
+src/states/StateGame.i: src/states/StateGame.cpp.i
+.PHONY : src/states/StateGame.i
+
+# target to preprocess a source file
+src/states/StateGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.i
+.PHONY : src/states/StateGame.cpp.i
+
+src/states/StateGame.s: src/states/StateGame.cpp.s
+.PHONY : src/states/StateGame.s
+
+# target to generate assembly for a file
+src/states/StateGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.s
+.PHONY : src/states/StateGame.cpp.s
+
+src/states/StateGameOver.o: src/states/StateGameOver.cpp.o
+.PHONY : src/states/StateGameOver.o
+
+# target to build an object file
+src/states/StateGameOver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o
+.PHONY : src/states/StateGameOver.cpp.o
+
+src/states/StateGameOver.i: src/states/StateGameOver.cpp.i
+.PHONY : src/states/StateGameOver.i
+
+# target to preprocess a source file
+src/states/StateGameOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.i
+.PHONY : src/states/StateGameOver.cpp.i
+
+src/states/StateGameOver.s: src/states/StateGameOver.cpp.s
+.PHONY : src/states/StateGameOver.s
+
+# target to generate assembly for a file
+src/states/StateGameOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.s
+.PHONY : src/states/StateGameOver.cpp.s
+
+src/states/StateMenu.o: src/states/StateMenu.cpp.o
+.PHONY : src/states/StateMenu.o
+
+# target to build an object file
+src/states/StateMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o
+.PHONY : src/states/StateMenu.cpp.o
+
+src/states/StateMenu.i: src/states/StateMenu.cpp.i
+.PHONY : src/states/StateMenu.i
+
+# target to preprocess a source file
+src/states/StateMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.i
+.PHONY : src/states/StateMenu.cpp.i
+
+src/states/StateMenu.s: src/states/StateMenu.cpp.s
+.PHONY : src/states/StateMenu.s
+
+# target to generate assembly for a file
+src/states/StateMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.s
+.PHONY : src/states/StateMenu.cpp.s
+
+src/states/StatePause.o: src/states/StatePause.cpp.o
+.PHONY : src/states/StatePause.o
+
+# target to build an object file
+src/states/StatePause.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o
+.PHONY : src/states/StatePause.cpp.o
+
+src/states/StatePause.i: src/states/StatePause.cpp.i
+.PHONY : src/states/StatePause.i
+
+# target to preprocess a source file
+src/states/StatePause.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.i
+.PHONY : src/states/StatePause.cpp.i
+
+src/states/StatePause.s: src/states/StatePause.cpp.s
+.PHONY : src/states/StatePause.s
+
+# target to generate assembly for a file
+src/states/StatePause.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.s
+.PHONY : src/states/StatePause.cpp.s
+
+src/systems/AIController.o: src/systems/AIController.cpp.o
+.PHONY : src/systems/AIController.o
+
+# target to build an object file
+src/systems/AIController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o
+.PHONY : src/systems/AIController.cpp.o
+
+src/systems/AIController.i: src/systems/AIController.cpp.i
+.PHONY : src/systems/AIController.i
+
+# target to preprocess a source file
+src/systems/AIController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.i
+.PHONY : src/systems/AIController.cpp.i
+
+src/systems/AIController.s: src/systems/AIController.cpp.s
+.PHONY : src/systems/AIController.s
+
+# target to generate assembly for a file
+src/systems/AIController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.s
+.PHONY : src/systems/AIController.cpp.s
+
 src/systems/PhysicsSystem.o: src/systems/PhysicsSystem.cpp.o
 .PHONY : src/systems/PhysicsSystem.o
 
@@ -262,6 +406,54 @@ src/systems/PhysicsSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.s
 .PHONY : src/systems/PhysicsSystem.cpp.s
 
+src/systems/ScoreSystem.o: src/systems/ScoreSystem.cpp.o
+.PHONY : src/systems/ScoreSystem.o
+
+# target to build an object file
+src/systems/ScoreSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o
+.PHONY : src/systems/ScoreSystem.cpp.o
+
+src/systems/ScoreSystem.i: src/systems/ScoreSystem.cpp.i
+.PHONY : src/systems/ScoreSystem.i
+
+# target to preprocess a source file
+src/systems/ScoreSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.i
+.PHONY : src/systems/ScoreSystem.cpp.i
+
+src/systems/ScoreSystem.s: src/systems/ScoreSystem.cpp.s
+.PHONY : src/systems/ScoreSystem.s
+
+# target to generate assembly for a file
+src/systems/ScoreSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.s
+.PHONY : src/systems/ScoreSystem.cpp.s
+
+src/ui/HUD.o: src/ui/HUD.cpp.o
+.PHONY : src/ui/HUD.o
+
+# target to build an object file
+src/ui/HUD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o
+.PHONY : src/ui/HUD.cpp.o
+
+src/ui/HUD.i: src/ui/HUD.cpp.i
+.PHONY : src/ui/HUD.i
+
+# target to preprocess a source file
+src/ui/HUD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.i
+.PHONY : src/ui/HUD.cpp.i
+
+src/ui/HUD.s: src/ui/HUD.cpp.s
+.PHONY : src/ui/HUD.s
+
+# target to generate assembly for a file
+src/ui/HUD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.s
+.PHONY : src/ui/HUD.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -275,6 +467,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/core/AssetManager.o"
+	@echo "... src/core/AssetManager.i"
+	@echo "... src/core/AssetManager.s"
 	@echo "... src/core/Game.o"
 	@echo "... src/core/Game.i"
 	@echo "... src/core/Game.s"
@@ -284,9 +479,30 @@ help:
 	@echo "... src/entities/Paddle.o"
 	@echo "... src/entities/Paddle.i"
 	@echo "... src/entities/Paddle.s"
+	@echo "... src/states/StateGame.o"
+	@echo "... src/states/StateGame.i"
+	@echo "... src/states/StateGame.s"
+	@echo "... src/states/StateGameOver.o"
+	@echo "... src/states/StateGameOver.i"
+	@echo "... src/states/StateGameOver.s"
+	@echo "... src/states/StateMenu.o"
+	@echo "... src/states/StateMenu.i"
+	@echo "... src/states/StateMenu.s"
+	@echo "... src/states/StatePause.o"
+	@echo "... src/states/StatePause.i"
+	@echo "... src/states/StatePause.s"
+	@echo "... src/systems/AIController.o"
+	@echo "... src/systems/AIController.i"
+	@echo "... src/systems/AIController.s"
 	@echo "... src/systems/PhysicsSystem.o"
 	@echo "... src/systems/PhysicsSystem.i"
 	@echo "... src/systems/PhysicsSystem.s"
+	@echo "... src/systems/ScoreSystem.o"
+	@echo "... src/systems/ScoreSystem.i"
+	@echo "... src/systems/ScoreSystem.s"
+	@echo "... src/ui/HUD.o"
+	@echo "... src/ui/HUD.i"
+	@echo "... src/ui/HUD.s"
 .PHONY : help
 
 

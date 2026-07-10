@@ -86,10 +86,24 @@ CMakeFiles/CyberPongModern.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/main.cpp -o CMakeFiles/CyberPongModern.dir/main.cpp.s
 
+CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.cpp
+CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.cpp
+
+CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.cpp > CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.cpp -o CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.s
+
 CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
 CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.cpp
 CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.cpp
 
 CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.s: cmake_force
 CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
 CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Ball.cpp
 CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Ball.cpp
 
 CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.s: cmake_force
 CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
 CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Paddle.cpp
 CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Paddle.cpp
 
 CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.i: cmake_force
@@ -128,10 +142,80 @@ CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Paddle.cpp -o CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.s
 
+CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.cpp
+CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.cpp
+
+CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.cpp > CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.cpp -o CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.s
+
+CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGameOver.cpp
+CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGameOver.cpp
+
+CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGameOver.cpp > CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGameOver.cpp -o CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.s
+
+CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.cpp
+CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.cpp
+
+CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.cpp > CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.cpp -o CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.s
+
+CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/states/StatePause.cpp
+CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/states/StatePause.cpp
+
+CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/states/StatePause.cpp > CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/states/StatePause.cpp -o CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.s
+
+CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/systems/AIController.cpp
+CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/systems/AIController.cpp
+
+CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/systems/AIController.cpp > CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/systems/AIController.cpp -o CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.s
+
 CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
 CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/systems/PhysicsSystem.cpp
 CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/systems/PhysicsSystem.cpp
 
 CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.i: cmake_force
@@ -142,29 +226,73 @@ CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/systems/PhysicsSystem.cpp -o CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.s
 
+CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/systems/ScoreSystem.cpp
+CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/systems/ScoreSystem.cpp
+
+CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/systems/ScoreSystem.cpp > CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/systems/ScoreSystem.cpp -o CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.s
+
+CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: CMakeFiles/CyberPongModern.dir/flags.make
+CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: /Users/sankhare/Downloads/CyberPongModern-2/src/ui/HUD.cpp
+CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: CMakeFiles/CyberPongModern.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o -MF CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o.d -o CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o -c /Users/sankhare/Downloads/CyberPongModern-2/src/ui/HUD.cpp
+
+CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sankhare/Downloads/CyberPongModern-2/src/ui/HUD.cpp > CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.i
+
+CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sankhare/Downloads/CyberPongModern-2/src/ui/HUD.cpp -o CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.s
+
 # Object files for target CyberPongModern
 CyberPongModern_OBJECTS = \
 "CMakeFiles/CyberPongModern.dir/main.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o" \
 "CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o" \
 "CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o" \
 "CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o" \
-"CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o"
+"CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o" \
+"CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o"
 
 # External object files for target CyberPongModern
 CyberPongModern_EXTERNAL_OBJECTS =
 
 CyberPongModern: CMakeFiles/CyberPongModern.dir/main.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o
 CyberPongModern: CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o
 CyberPongModern: CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o
 CyberPongModern: CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o
 CyberPongModern: CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o
+CyberPongModern: CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o
 CyberPongModern: CMakeFiles/CyberPongModern.dir/build.make
 CyberPongModern: /usr/local/lib/libsfml-graphics.3.0.2.dylib
 CyberPongModern: /usr/local/lib/libsfml-window.3.0.2.dylib
 CyberPongModern: /usr/local/lib/libsfml-audio.3.0.2.dylib
 CyberPongModern: /usr/local/lib/libsfml-system.3.0.2.dylib
 CyberPongModern: CMakeFiles/CyberPongModern.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CyberPongModern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable CyberPongModern"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CyberPongModern.dir/link.txt --verbose=$(VERBOSE)
 	/usr/local/bin/cmake -E copy_directory /Users/sankhare/Downloads/CyberPongModern-2/assets /Users/sankhare/Downloads/CyberPongModern-2/build/assets
 

@@ -1,30 +1,30 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <memory>
-#include "../entities/Ball.h"
-#include "../entities/Paddle.h"
-#include "../systems/PhysicsSystem.h"
+#include <vector>
+#include "AssetManager.h"
 
-// Jour 1 : pas encore de Pattern State (arrive Jour 2).
-// Game gère directement la boucle et une partie 2 joueurs simple.
+class State;
+
 class Game {
 public:
     Game();
+    ~Game();
+
     void run();
+
+    void pushState(std::unique_ptr<State> state);
+    void popState();
+    void changeState(std::unique_ptr<State> state);
+
+    sf::RenderWindow& getWindow() { return window; }
+    AssetManager& getAssets() { return assets; }
 
     static constexpr int WINDOW_W = 1280;
     static constexpr int WINDOW_H = 720;
 
 private:
     sf::RenderWindow window;
-
-    std::unique_ptr<Ball> ball;
-    std::unique_ptr<Paddle> paddleLeft;
-    std::unique_ptr<Paddle> paddleRight;
-    PhysicsSystem physics;
-
-    void processEvents();
-    void handlePaddleInput(float dt);
-    void update(float dt);
-    void render();
+    AssetManager assets;
+    std::vector<std::unique_ptr<State>> states;
 };

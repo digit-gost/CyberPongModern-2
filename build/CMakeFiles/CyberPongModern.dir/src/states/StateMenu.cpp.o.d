@@ -1,6 +1,7 @@
-CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.h \
+CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o: \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.cpp \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/State.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -897,6 +898,17 @@ CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/State.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/StateMenu.h
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/GameMode.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Ball.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Entity.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Paddle.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/PhysicsSystem.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Ball.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/AIController.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/ScoreSystem.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../ui/HUD.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Game.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AssetManager.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Paths.h

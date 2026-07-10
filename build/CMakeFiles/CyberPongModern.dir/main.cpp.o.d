@@ -897,9 +897,4 @@ CMakeFiles/CyberPongModern.dir/main.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../entities/Entity.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/PhysicsSystem.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/../entities/Paddle.h
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h

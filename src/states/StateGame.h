@@ -1,0 +1,36 @@
+#pragma once
+#include "State.h"
+#include "GameMode.h"
+#include "../entities/Ball.h"
+#include "../entities/Paddle.h"
+#include "../systems/PhysicsSystem.h"
+#include "../systems/AIController.h"
+#include "../systems/ScoreSystem.h"
+#include "../ui/HUD.h"
+#include <memory>
+
+class StateGame : public State {
+public:
+    StateGame(Game& game, GameMode mode);
+
+    void handleEvent(const sf::Event& event) override;
+    void update(float dt) override;
+    void draw(sf::RenderWindow& window) override;
+
+private:
+    GameMode mode;
+    std::unique_ptr<Ball> ball;
+    std::unique_ptr<Paddle> paddleLeft;
+    std::unique_ptr<Paddle> paddleRight;
+    std::unique_ptr<AIController> ai; // nullptr en mode PVP
+    PhysicsSystem physics;
+    ScoreSystem scores;
+    HUD hud;
+
+    float gridOffset = 0.f;
+    static constexpr int GRID_CELL = 80;
+
+    void handlePaddleInput(float dt);
+    void checkScoring();
+    void drawCyberGrid(sf::RenderWindow& window);
+};
