@@ -7,7 +7,7 @@
 StateGameOver::StateGameOver(Game& game, Paddle::Side winner)
     : State(game),
       winnerText(game.getAssets().getFont(Assets::FONT_MAIN),
-                 winner == Paddle::Side::LEFT ? "CYAN-7 GAGNE !" : "GAME OVER!!, T'es vraiment null", 52),
+                 winner == Paddle::Side::LEFT ? "CYAN-7 GAGNE !" : "GAME OVER!!, T'es vraiment null", 52),// A vérifier
       hintText(game.getAssets().getFont(Assets::FONT_MAIN), "Entree : retour au menu", 26),
       savedHint(game.getAssets().getFont(Assets::FONT_MAIN),
                 "Score enregistre dans les meilleurs scores", 18)
