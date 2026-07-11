@@ -14,6 +14,9 @@ public:
 
     void run();
 
+    // Ces méthodes ne font QUE noter la demande ; le changement réel est
+    // appliqué en fin de frame (voir applyPendingStateChange), pour ne
+    // jamais détruire un State pendant qu'il est en train de s'exécuter.
     void pushState(std::unique_ptr<State> state);
     void popState();
     void changeState(std::unique_ptr<State> state);
@@ -30,4 +33,10 @@ private:
     AssetManager assets;
     HighScoreTable highScores;
     std::vector<std::unique_ptr<State>> states;
+
+    enum class PendingAction { NONE, PUSH, POP, CHANGE };
+    PendingAction pendingAction = PendingAction::NONE;
+    std::unique_ptr<State> pendingState;
+
+    void applyPendingStateChange();
 };

@@ -11,6 +11,7 @@ Game::Game()
     window.setFramerateLimit(144);
     highScores.load();
     changeState(std::make_unique<StateMenu>(*this));
+    applyPendingStateChange(); // on applique tout de suite le tout premier état
 }
 
 Game::~Game() = default;
@@ -33,6 +34,10 @@ void Game::run() {
             states.back()->update(dt);
         }
 
+        // Appliqué seulement maintenant : update() est totalement terminé,
+        // donc détruire l'ancien état ici ne casse plus rien.
+        applyPendingStateChange();
+
         window.clear(sf::Color(10, 10, 20));
         for (auto& state : states) {
             state->draw(window);
@@ -42,14 +47,33 @@ void Game::run() {
 }
 
 void Game::pushState(std::unique_ptr<State> state) {
-    states.push_back(std::move(state));
+    pendingAction = PendingAction::PUSH;
+    pendingState = std::move(state);
 }
 
 void Game::popState() {
-    if (!states.empty()) states.pop_back();
+    pendingAction = PendingAction::POP;
 }
 
 void Game::changeState(std::unique_ptr<State> state) {
-    states.clear();
-    states.push_back(std::move(state));
+    pendingAction = PendingAction::CHANGE;
+    pendingState = std::move(state);
+}
+
+void Game::applyPendingStateChange() {
+    switch (pendingAction) {
+        case PendingAction::PUSH:
+            states.push_back(std::move(pendingState));
+            break;
+        case PendingAction::POP:
+            if (!states.empty()) states.pop_back();
+            break;
+        case PendingAction::CHANGE:
+            states.clear();
+            states.push_back(std::move(pendingState));
+            break;
+        case PendingAction::NONE:
+            break;
+    }
+    pendingAction = PendingAction::NONE;
 }
