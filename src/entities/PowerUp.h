@@ -1,7 +1,14 @@
 #pragma once
 #include "Entity.h"
 
-enum class PowerUpType { SPEED_BOOST, BIG_PADDLE, TINY_PADDLE, INVISIBLE_BALL };
+enum class PowerUpType {
+    SPEED_BOOST,
+    SLOW_MO,
+    BIG_PADDLE,
+    TINY_PADDLE,
+    INVISIBLE_BALL,
+    TWIN_BALL
+};
 
 class PowerUp : public Entity {
 public:

@@ -19,7 +19,7 @@ void PowerUp::draw(sf::RenderWindow& window) {
 }
 
 void PowerUp::reset() {
-    // Un power-up est détruit après usage par PowerUpSystem, pas besoin de le réinitialiser.
+    // Un power-up est detruit apres usage par PowerUpSystem.
 }
 
 sf::FloatRect PowerUp::getBounds() const {
@@ -29,9 +29,11 @@ sf::FloatRect PowerUp::getBounds() const {
 sf::Color PowerUp::colorForType(PowerUpType t) const {
     switch (t) {
         case PowerUpType::SPEED_BOOST:    return sf::Color::Red;
+        case PowerUpType::SLOW_MO:        return sf::Color::Blue;
         case PowerUpType::BIG_PADDLE:     return sf::Color::Green;
         case PowerUpType::TINY_PADDLE:    return sf::Color(148, 0, 211);
         case PowerUpType::INVISIBLE_BALL: return sf::Color::White;
+        case PowerUpType::TWIN_BALL:      return sf::Color(255, 215, 0); // or
     }
     return sf::Color::White;
 }

@@ -9,7 +9,7 @@ namespace {
     }
 
     PowerUpType randomType() {
-        std::uniform_int_distribution<int> dist(0, 3);
+        std::uniform_int_distribution<int> dist(0, 5);
         return static_cast<PowerUpType>(dist(rng()));
     }
 }
@@ -25,21 +25,42 @@ void PowerUpSystem::trySpawn(float dt) {
     }
 }
 
-void PowerUpSystem::checkCollision(Ball& ball, Paddle& paddleLeft, Paddle& paddleRight, Paddle::Side lastScorer) {
-    if (!activePowerUp) return;
+bool PowerUpSystem::ballStillExists(Ball* ptr, std::vector<std::unique_ptr<Ball>>& balls) const {
+    for (auto& b : balls) {
+        if (b.get() == ptr) return true;
+    }
+    return false;
+}
 
-    if (ball.getBounds().findIntersection(activePowerUp->getBounds()).has_value()) {
-        applyEffect(activePowerUp->getType(), ball, paddleLeft, paddleRight, lastScorer);
+void PowerUpSystem::checkCollision(std::vector<std::unique_ptr<Ball>>& balls,
+                                    Paddle& paddleLeft, Paddle& paddleRight, Paddle::Side lastScorer) {
+    if (!activePowerUp || balls.empty()) return;
+
+    // Seule la balle principale (balls[0]) peut activer un power-up.
+    Ball& mainBall = *balls[0];
+    if (mainBall.getBounds().findIntersection(activePowerUp->getBounds()).has_value()) {
+        applyEffect(activePowerUp->getType(), mainBall, paddleLeft, paddleRight, lastScorer);
         activePowerUp.reset();
     }
 }
 
-void PowerUpSystem::applyEffect(PowerUpType type, Ball& ball, Paddle& paddleLeft, Paddle& paddleRight, Paddle::Side lastScorer) {
+void PowerUpSystem::applyEffect(PowerUpType type, Ball& ball,
+                                 Paddle& paddleLeft, Paddle& paddleRight, Paddle::Side lastScorer) {
     switch (type) {
         case PowerUpType::SPEED_BOOST:
             ball.applySpeedMultiplier(1.5f);
-            speedBoostActive = true;
-            speedBoostTimer = EFFECT_DURATION;
+            speedFactorApplied = 1.5f;
+            speedActive = true;
+            speedTimer = EFFECT_DURATION;
+            speedBall = &ball;
+            break;
+
+        case PowerUpType::SLOW_MO:
+            ball.applySpeedMultiplier(0.4f);
+            speedFactorApplied = 0.4f;
+            speedActive = true;
+            speedTimer = EFFECT_DURATION;
+            speedBall = &ball;
             break;
 
         case PowerUpType::BIG_PADDLE: {
@@ -62,18 +83,39 @@ void PowerUpSystem::applyEffect(PowerUpType type, Ball& ball, Paddle& paddleLeft
 
         case PowerUpType::INVISIBLE_BALL:
             ball.setVisible(false);
-            invisibleBallActive = true;
-            invisibleBallTimer = INVISIBLE_DURATION;
+            invisibleActive = true;
+            invisibleTimer = INVISIBLE_DURATION;
+            invisibleBall = &ball;
+            break;
+
+        case PowerUpType::TWIN_BALL:
+            twinBallRequested = true;
+            twinBallSource = &ball;
             break;
     }
 }
 
-void PowerUpSystem::updateEffects(float dt, Paddle& paddleLeft, Paddle& paddleRight, Ball& ball) {
-    if (speedBoostActive) {
-        speedBoostTimer -= dt;
-        if (speedBoostTimer <= 0.f) {
-            ball.applySpeedMultiplier(1.f / 1.5f);
-            speedBoostActive = false;
+void PowerUpSystem::updateEffects(float dt, std::vector<std::unique_ptr<Ball>>& balls,
+                                   Paddle& paddleLeft, Paddle& paddleRight) {
+    if (speedActive) {
+        speedTimer -= dt;
+        if (speedTimer <= 0.f) {
+            if (speedBall && ballStillExists(speedBall, balls)) {
+                speedBall->applySpeedMultiplier(1.f / speedFactorApplied);
+            }
+            speedActive = false;
+            speedBall = nullptr;
+        }
+    }
+
+    if (invisibleActive) {
+        invisibleTimer -= dt;
+        if (invisibleTimer <= 0.f) {
+            if (invisibleBall && ballStillExists(invisibleBall, balls)) {
+                invisibleBall->setVisible(true);
+            }
+            invisibleActive = false;
+            invisibleBall = nullptr;
         }
     }
 
@@ -94,27 +136,28 @@ void PowerUpSystem::updateEffects(float dt, Paddle& paddleLeft, Paddle& paddleRi
             tinyPaddleActive = false;
         }
     }
-
-    if (invisibleBallActive) {
-        invisibleBallTimer -= dt;
-        if (invisibleBallTimer <= 0.f) {
-            ball.setVisible(true);
-            invisibleBallActive = false;
-        }
-    }
 }
 
-void PowerUpSystem::update(float dt, Ball& ball, Paddle& paddleLeft, Paddle& paddleRight, Paddle::Side lastScorer) {
+void PowerUpSystem::update(float dt, std::vector<std::unique_ptr<Ball>>& balls,
+                            Paddle& paddleLeft, Paddle& paddleRight, Paddle::Side lastScorer) {
     trySpawn(dt);
     if (activePowerUp) {
         activePowerUp->update(dt);
     }
-    checkCollision(ball, paddleLeft, paddleRight, lastScorer);
-    updateEffects(dt, paddleLeft, paddleRight, ball);
+    checkCollision(balls, paddleLeft, paddleRight, lastScorer);
+    updateEffects(dt, balls, paddleLeft, paddleRight);
 }
 
 void PowerUpSystem::draw(sf::RenderWindow& window) {
     if (activePowerUp) {
         activePowerUp->draw(window);
     }
+}
+
+bool PowerUpSystem::consumeTwinBallRequest(Ball*& sourceBall) {
+    if (!twinBallRequested) return false;
+    twinBallRequested = false;
+    sourceBall = twinBallSource;
+    twinBallSource = nullptr;
+    return true;
 }

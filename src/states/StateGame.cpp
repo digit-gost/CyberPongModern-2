@@ -14,7 +14,7 @@ StateGame::StateGame(Game& game, GameMode mode_)
       ai(mode_ == GameMode::PVE ? std::make_unique<AIController>(AIDifficulty::CYBORG) : nullptr),
       hud(game.getAssets().getFont(Assets::FONT_MAIN))
 {
-    ball = std::make_unique<Ball>(sf::Vector2f(Game::WINDOW_W / 2.f, Game::WINDOW_H / 2.f));
+    balls.push_back(std::make_unique<Ball>(sf::Vector2f(Game::WINDOW_W / 2.f, Game::WINDOW_H / 2.f)));
     paddleLeft = std::make_unique<Paddle>(
         sf::Vector2f(40.f, Game::WINDOW_H / 2.f), Paddle::Side::LEFT);
     paddleRight = std::make_unique<Paddle>(
@@ -46,14 +46,25 @@ void StateGame::handlePaddleInput(float dt) {
 }
 
 void StateGame::checkScoring() {
-    sf::FloatRect b = ball->getBounds();
+    for (size_t i = 0; i < balls.size(); ) {
+        sf::FloatRect b = balls[i]->getBounds();
+        bool exitedLeft = b.position.x + b.size.x < 0.f;
+        bool exitedRight = b.position.x > Game::WINDOW_W;
 
-    if (b.position.x + b.size.x < 0.f) {
-        scores.addPoint(Paddle::Side::RIGHT);
-        ball->reset();
-    } else if (b.position.x > Game::WINDOW_W) {
-        scores.addPoint(Paddle::Side::LEFT);
-        ball->reset();
+        if (exitedLeft || exitedRight) {
+            Paddle::Side scorer = exitedLeft ? Paddle::Side::RIGHT : Paddle::Side::LEFT;
+            scores.addPoint(scorer);
+
+            if (balls.size() > 1) {
+                balls.erase(balls.begin() + (long)i);
+                continue; // ne pas incrementer i : la taille a change
+            } else {
+                balls[i]->reset();
+                ++i;
+            }
+        } else {
+            ++i;
+        }
     }
 
     if (scores.isMatchOver()) {
@@ -71,17 +82,26 @@ void StateGame::update(float dt) {
 
     paddleLeft->update(dt);
     paddleRight->update(dt);
-    ball->update(dt);
 
-    physics.resolveWallCollision(*ball, Game::WINDOW_H);
-    physics.resolvePaddleCollision(*ball, *paddleLeft);
-    physics.resolvePaddleCollision(*ball, *paddleRight);
-
-    if (ai) {
-        ai->update(*paddleRight, *ball, dt);
+    for (auto& ballPtr : balls) {
+        ballPtr->update(dt);
+        physics.resolveWallCollision(*ballPtr, Game::WINDOW_H);
+        physics.resolvePaddleCollision(*ballPtr, *paddleLeft);
+        physics.resolvePaddleCollision(*ballPtr, *paddleRight);
     }
 
-    powerups.update(dt, *ball, *paddleLeft, *paddleRight, scores.getLastScorer());
+    if (ai && !balls.empty()) {
+        ai->update(*paddleRight, *balls[0], dt);
+    }
+
+    powerups.update(dt, balls, *paddleLeft, *paddleRight, scores.getLastScorer());
+
+    Ball* twinSource = nullptr;
+    if (powerups.consumeTwinBallRequest(twinSource) && twinSource) {
+        auto twin = std::make_unique<Ball>(twinSource->getPosition());
+        twin->setVelocity({-twinSource->getVelocity().x, twinSource->getVelocity().y});
+        balls.push_back(std::move(twin));
+    }
 
     checkScoring();
 
@@ -125,6 +145,8 @@ void StateGame::draw(sf::RenderWindow& window) {
     powerups.draw(window);
     paddleLeft->draw(window);
     paddleRight->draw(window);
-    ball->draw(window);
+    for (auto& ballPtr : balls) {
+        ballPtr->draw(window);
+    }
     hud.draw(window);
 }

@@ -9,6 +9,7 @@
 #include "../systems/PowerUpSystem.h"
 #include "../ui/HUD.h"
 #include <memory>
+#include <vector>
 
 class StateGame : public State {
 public:
@@ -20,7 +21,7 @@ public:
 
 private:
     GameMode mode;
-    std::unique_ptr<Ball> ball;
+    std::vector<std::unique_ptr<Ball>> balls; // balls[0] = balle principale
     std::unique_ptr<Paddle> paddleLeft;
     std::unique_ptr<Paddle> paddleRight;
     std::unique_ptr<AIController> ai;
