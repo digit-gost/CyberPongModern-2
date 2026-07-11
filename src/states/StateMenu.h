@@ -14,8 +14,14 @@ private:
     sf::Text titleText;
     sf::Text optionPVE;
     sf::Text optionPVP;
+    sf::Text optionScores;
     sf::Text optionQuit;
-    int selectedIndex = 0; // 0 = PVE, 1 = PVP, 2 = Quitter
+    sf::Text scoresListText;
+    sf::Text backHint;
+
+    int selectedIndex = 0; // 0=PVE, 1=PVP, 2=Scores, 3=Quitter
+    bool showingScores = false;
 
     void updateSelectionVisuals();
+    void buildScoresList();
 };

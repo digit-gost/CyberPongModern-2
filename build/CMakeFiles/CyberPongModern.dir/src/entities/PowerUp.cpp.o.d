@@ -1,6 +1,7 @@
-CMakeFiles/CyberPongModern.dir/main.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/main.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.h \
+CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.o: \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/PowerUp.cpp \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/PowerUp.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Entity.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -896,6 +897,4 @@ CMakeFiles/CyberPongModern.dir/main.cpp.o: \
   /usr/local/include/SFML/System/FileInputStream.hpp \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
-  /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/HighScoreTable.h
+  /usr/local/include/SFML/System/Sleep.hpp

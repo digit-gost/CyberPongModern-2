@@ -5,8 +5,15 @@ ScoreSystem::ScoreSystem() = default;
 void ScoreSystem::addPoint(Paddle::Side scorer) {
     if (matchOver) return;
 
-    if (scorer == Paddle::Side::LEFT) pointsLeft++;
-    else pointsRight++;
+    lastScorer = scorer;
+
+    if (scorer == Paddle::Side::LEFT) {
+        pointsLeft++;
+        totalPointsLeftAll++;
+    } else {
+        pointsRight++;
+        totalPointsRightAll++;
+    }
 
     checkSetEnd();
 }
@@ -34,6 +41,7 @@ void ScoreSystem::checkSetEnd() {
 void ScoreSystem::reset() {
     pointsLeft = pointsRight = 0;
     setsLeft = setsRight = 0;
+    totalPointsLeftAll = totalPointsRightAll = 0;
     matchOver = false;
 }
 
@@ -43,4 +51,8 @@ int ScoreSystem::getSetPoints(Paddle::Side side) const {
 
 int ScoreSystem::getSets(Paddle::Side side) const {
     return side == Paddle::Side::LEFT ? setsLeft : setsRight;
+}
+
+int ScoreSystem::getTotalPoints(Paddle::Side side) const {
+    return side == Paddle::Side::LEFT ? totalPointsLeftAll : totalPointsRightAll;
 }

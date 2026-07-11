@@ -898,4 +898,5 @@ CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
   /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/Game.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/AssetManager.h
+  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/AssetManager.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/../systems/HighScoreTable.h

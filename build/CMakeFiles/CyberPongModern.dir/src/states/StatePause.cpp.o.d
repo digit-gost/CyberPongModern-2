@@ -901,4 +901,5 @@ CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o: \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Game.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AssetManager.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/../systems/HighScoreTable.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Paths.h

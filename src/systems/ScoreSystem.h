@@ -1,7 +1,6 @@
 #pragma once
 #include "../entities/Paddle.h"
 
-// Score, sets, et logique de fin de manche/partie.
 class ScoreSystem {
 public:
     ScoreSystem();
@@ -11,6 +10,8 @@ public:
 
     int getSetPoints(Paddle::Side side) const;
     int getSets(Paddle::Side side) const;
+    int getTotalPoints(Paddle::Side side) const;
+    Paddle::Side getLastScorer() const { return lastScorer; }
 
     bool isMatchOver() const { return matchOver; }
     Paddle::Side getMatchWinner() const { return winner; }
@@ -23,8 +24,11 @@ private:
     int pointsRight = 0;
     int setsLeft = 0;
     int setsRight = 0;
+    int totalPointsLeftAll = 0;
+    int totalPointsRightAll = 0;
     bool matchOver = false;
     Paddle::Side winner = Paddle::Side::LEFT;
+    Paddle::Side lastScorer = Paddle::Side::LEFT;
 
     void checkSetEnd();
 };

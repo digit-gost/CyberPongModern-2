@@ -14,4 +14,5 @@ public:
 private:
     sf::Text winnerText;
     sf::Text hintText;
+    sf::Text savedHint;
 };

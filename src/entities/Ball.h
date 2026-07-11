@@ -1,5 +1,6 @@
 #pragma once
 #include "Entity.h"
+#include <deque>
 
 class Ball : public Entity {
 public:
@@ -14,10 +15,9 @@ public:
     void setVisible(bool v);
     float getRadius() const { return radius; }
 
-    // Utilisé par PhysicsSystem pour corriger la position après collision
     void move(sf::Vector2f offset);
 
-    static constexpr float INITIAL_SPEED = 350.f; // pixels/seconde
+    static constexpr float INITIAL_SPEED = 350.f;
 
 private:
     float radius;
@@ -25,6 +25,10 @@ private:
     sf::Vector2f startPosition;
     bool visible = true;
     float speedMultiplier = 1.f;
-    // NOTE (Jour 3) : ajouter std::deque<sf::Vector2f> trail pour l'effet
-    // de trainée lumineuse (8 dernières positions) + drawTrail().
+
+    std::deque<sf::Vector2f> trail;
+    static constexpr int TRAIL_LEN = 8;
+
+    void updateTrail();
+    void drawTrail(sf::RenderWindow& window);
 };

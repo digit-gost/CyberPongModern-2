@@ -262,6 +262,30 @@ src/entities/Paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.s
 .PHONY : src/entities/Paddle.cpp.s
 
+src/entities/PowerUp.o: src/entities/PowerUp.cpp.o
+.PHONY : src/entities/PowerUp.o
+
+# target to build an object file
+src/entities/PowerUp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.o
+.PHONY : src/entities/PowerUp.cpp.o
+
+src/entities/PowerUp.i: src/entities/PowerUp.cpp.i
+.PHONY : src/entities/PowerUp.i
+
+# target to preprocess a source file
+src/entities/PowerUp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.i
+.PHONY : src/entities/PowerUp.cpp.i
+
+src/entities/PowerUp.s: src/entities/PowerUp.cpp.s
+.PHONY : src/entities/PowerUp.s
+
+# target to generate assembly for a file
+src/entities/PowerUp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.s
+.PHONY : src/entities/PowerUp.cpp.s
+
 src/states/StateGame.o: src/states/StateGame.cpp.o
 .PHONY : src/states/StateGame.o
 
@@ -382,6 +406,30 @@ src/systems/AIController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.s
 .PHONY : src/systems/AIController.cpp.s
 
+src/systems/HighScoreTable.o: src/systems/HighScoreTable.cpp.o
+.PHONY : src/systems/HighScoreTable.o
+
+# target to build an object file
+src/systems/HighScoreTable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.o
+.PHONY : src/systems/HighScoreTable.cpp.o
+
+src/systems/HighScoreTable.i: src/systems/HighScoreTable.cpp.i
+.PHONY : src/systems/HighScoreTable.i
+
+# target to preprocess a source file
+src/systems/HighScoreTable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.i
+.PHONY : src/systems/HighScoreTable.cpp.i
+
+src/systems/HighScoreTable.s: src/systems/HighScoreTable.cpp.s
+.PHONY : src/systems/HighScoreTable.s
+
+# target to generate assembly for a file
+src/systems/HighScoreTable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.s
+.PHONY : src/systems/HighScoreTable.cpp.s
+
 src/systems/PhysicsSystem.o: src/systems/PhysicsSystem.cpp.o
 .PHONY : src/systems/PhysicsSystem.o
 
@@ -405,6 +453,30 @@ src/systems/PhysicsSystem.s: src/systems/PhysicsSystem.cpp.s
 src/systems/PhysicsSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.s
 .PHONY : src/systems/PhysicsSystem.cpp.s
+
+src/systems/PowerUpSystem.o: src/systems/PowerUpSystem.cpp.o
+.PHONY : src/systems/PowerUpSystem.o
+
+# target to build an object file
+src/systems/PowerUpSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.o
+.PHONY : src/systems/PowerUpSystem.cpp.o
+
+src/systems/PowerUpSystem.i: src/systems/PowerUpSystem.cpp.i
+.PHONY : src/systems/PowerUpSystem.i
+
+# target to preprocess a source file
+src/systems/PowerUpSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.i
+.PHONY : src/systems/PowerUpSystem.cpp.i
+
+src/systems/PowerUpSystem.s: src/systems/PowerUpSystem.cpp.s
+.PHONY : src/systems/PowerUpSystem.s
+
+# target to generate assembly for a file
+src/systems/PowerUpSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.s
+.PHONY : src/systems/PowerUpSystem.cpp.s
 
 src/systems/ScoreSystem.o: src/systems/ScoreSystem.cpp.o
 .PHONY : src/systems/ScoreSystem.o
@@ -479,6 +551,9 @@ help:
 	@echo "... src/entities/Paddle.o"
 	@echo "... src/entities/Paddle.i"
 	@echo "... src/entities/Paddle.s"
+	@echo "... src/entities/PowerUp.o"
+	@echo "... src/entities/PowerUp.i"
+	@echo "... src/entities/PowerUp.s"
 	@echo "... src/states/StateGame.o"
 	@echo "... src/states/StateGame.i"
 	@echo "... src/states/StateGame.s"
@@ -494,9 +569,15 @@ help:
 	@echo "... src/systems/AIController.o"
 	@echo "... src/systems/AIController.i"
 	@echo "... src/systems/AIController.s"
+	@echo "... src/systems/HighScoreTable.o"
+	@echo "... src/systems/HighScoreTable.i"
+	@echo "... src/systems/HighScoreTable.s"
 	@echo "... src/systems/PhysicsSystem.o"
 	@echo "... src/systems/PhysicsSystem.i"
 	@echo "... src/systems/PhysicsSystem.s"
+	@echo "... src/systems/PowerUpSystem.o"
+	@echo "... src/systems/PowerUpSystem.i"
+	@echo "... src/systems/PowerUpSystem.s"
 	@echo "... src/systems/ScoreSystem.o"
 	@echo "... src/systems/ScoreSystem.i"
 	@echo "... src/systems/ScoreSystem.s"

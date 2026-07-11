@@ -908,7 +908,12 @@ CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o: \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/AIController.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/ScoreSystem.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/PowerUpSystem.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/PowerUp.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Entity.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../ui/HUD.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Game.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Paths.h
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/../systems/HighScoreTable.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Paths.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/HighScoreTable.h

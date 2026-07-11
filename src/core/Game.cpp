@@ -9,6 +9,7 @@ Game::Game()
              sf::Style::Titlebar | sf::Style::Close)
 {
     window.setFramerateLimit(144);
+    highScores.load();
     changeState(std::make_unique<StateMenu>(*this));
 }
 

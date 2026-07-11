@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <cstdint>
 #include <memory>
+#include <string>
 
 StateGame::StateGame(Game& game, GameMode mode_)
     : State(game),
@@ -19,6 +20,7 @@ StateGame::StateGame(Game& game, GameMode mode_)
     paddleRight = std::make_unique<Paddle>(
         sf::Vector2f(Game::WINDOW_W - 40.f, Game::WINDOW_H / 2.f), Paddle::Side::RIGHT);
 }
+
 void StateGame::handleEvent(const sf::Event& event) {
     const auto* key = event.getIf<sf::Event::KeyPressed>();
     if (!key) return;
@@ -55,7 +57,12 @@ void StateGame::checkScoring() {
     }
 
     if (scores.isMatchOver()) {
-        game.changeState(std::make_unique<StateGameOver>(game, scores.getMatchWinner()));
+        Paddle::Side winner = scores.getMatchWinner();
+        std::string label = (winner == Paddle::Side::LEFT) ? "CYAN-7" : "NOVA-X";
+        int value = scores.getTotalPoints(winner);
+        game.getHighScores().addEntry(label, value);
+
+        game.changeState(std::make_unique<StateGameOver>(game, winner));
     }
 }
 
@@ -73,6 +80,8 @@ void StateGame::update(float dt) {
     if (ai) {
         ai->update(*paddleRight, *ball, dt);
     }
+
+    powerups.update(dt, *ball, *paddleLeft, *paddleRight, scores.getLastScorer());
 
     checkScoring();
 
@@ -113,6 +122,7 @@ void StateGame::drawCyberGrid(sf::RenderWindow& window) {
 
 void StateGame::draw(sf::RenderWindow& window) {
     drawCyberGrid(window);
+    powerups.draw(window);
     paddleLeft->draw(window);
     paddleRight->draw(window);
     ball->draw(window);

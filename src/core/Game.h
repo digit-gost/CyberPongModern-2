@@ -3,6 +3,7 @@
 #include <memory>
 #include <vector>
 #include "AssetManager.h"
+#include "../systems/HighScoreTable.h"
 
 class State;
 
@@ -19,6 +20,7 @@ public:
 
     sf::RenderWindow& getWindow() { return window; }
     AssetManager& getAssets() { return assets; }
+    HighScoreTable& getHighScores() { return highScores; }
 
     static constexpr int WINDOW_W = 1280;
     static constexpr int WINDOW_H = 720;
@@ -26,5 +28,6 @@ public:
 private:
     sf::RenderWindow window;
     AssetManager assets;
+    HighScoreTable highScores;
     std::vector<std::unique_ptr<State>> states;
 };

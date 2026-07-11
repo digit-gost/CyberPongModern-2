@@ -6,6 +6,7 @@
 #include "../systems/PhysicsSystem.h"
 #include "../systems/AIController.h"
 #include "../systems/ScoreSystem.h"
+#include "../systems/PowerUpSystem.h"
 #include "../ui/HUD.h"
 #include <memory>
 
@@ -22,9 +23,10 @@ private:
     std::unique_ptr<Ball> ball;
     std::unique_ptr<Paddle> paddleLeft;
     std::unique_ptr<Paddle> paddleRight;
-    std::unique_ptr<AIController> ai; // nullptr en mode PVP
+    std::unique_ptr<AIController> ai;
     PhysicsSystem physics;
     ScoreSystem scores;
+    PowerUpSystem powerups;
     HUD hud;
 
     float gridOffset = 0.f;
