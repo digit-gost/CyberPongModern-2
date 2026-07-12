@@ -29,8 +29,8 @@ bool PhysicsSystem::resolvePaddleCollision(Ball& ball, Paddle& paddle) {
     float relativeHit = (ballCenterY - paddleCenterY) / (paddleBounds.size.y / 2.f);
     relativeHit = std::clamp(relativeHit, -1.f, 1.f);
 
-    float bounceAngle = relativeHit * 75.f * (float)(M_PI / 180.0);
-
+    constexpr float PI = 3.14159265358979323846f;
+    float bounceAngle = relativeHit * 75.f * (PI / 180.f);
     float speed = std::hypot(ball.getVelocity().x, ball.getVelocity().y);
     speed = std::min(speed * SPEED_INCREASE_FACTOR, MAX_BALL_SPEED);
 
