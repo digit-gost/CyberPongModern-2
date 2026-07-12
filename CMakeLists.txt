@@ -30,3 +30,10 @@ add_custom_command(TARGET CyberPongModern POST_BUILD
 add_custom_target(memcheck
     COMMAND valgrind --leak-check=full --error-exitcode=1 ./CyberPongModern
     DEPENDS CyberPongModern)
+
+add_executable(CyberPongModern_asan ${SOURCES})
+target_include_directories(CyberPongModern_asan PRIVATE src/)
+target_link_libraries(CyberPongModern_asan PRIVATE
+    SFML::Graphics SFML::Window SFML::System SFML::Audio)
+target_compile_options(CyberPongModern_asan PRIVATE -fsanitize=address -g)
+target_link_options(CyberPongModern_asan PRIVATE -fsanitize=address)

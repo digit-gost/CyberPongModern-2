@@ -1,4 +1,5 @@
 /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles/CyberPongModern.dir
 /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles/memcheck.dir
+/Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles/CyberPongModern_asan.dir
 /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles/edit_cache.dir
 /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles/rebuild_cache.dir

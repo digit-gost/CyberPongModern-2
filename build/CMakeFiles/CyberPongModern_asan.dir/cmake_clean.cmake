@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/CyberPongModern_asan.dir/main.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/main.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/core/AssetManager.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/core/AssetManager.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/core/AudioManager.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/core/AudioManager.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/core/Game.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/core/Game.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/entities/Ball.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/entities/Ball.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/entities/Paddle.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/entities/Paddle.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/entities/PowerUp.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/entities/PowerUp.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StateGame.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StateGame.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StateGameOver.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StateGameOver.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StateMenu.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StateMenu.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StatePause.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/states/StatePause.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/AIController.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/AIController.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/HighScoreTable.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/HighScoreTable.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/PhysicsSystem.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/PhysicsSystem.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/PowerUpSystem.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/PowerUpSystem.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/ScoreSystem.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/systems/ScoreSystem.cpp.o.d"
+  "CMakeFiles/CyberPongModern_asan.dir/src/ui/HUD.cpp.o"
+  "CMakeFiles/CyberPongModern_asan.dir/src/ui/HUD.cpp.o.d"
+  "CyberPongModern_asan"
+  "CyberPongModern_asan.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/CyberPongModern_asan.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

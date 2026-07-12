@@ -142,12 +142,26 @@ memcheck/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/build
 .PHONY : memcheck/fast
 
+#=============================================================================
+# Target rules for targets named CyberPongModern_asan
+
+# Build rule for target.
+CyberPongModern_asan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CyberPongModern_asan
+.PHONY : CyberPongModern_asan
+
+# fast build rule for target.
+CyberPongModern_asan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/build
+.PHONY : CyberPongModern_asan/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -156,6 +170,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -164,6 +179,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/core/AssetManager.o: src/core/AssetManager.cpp.o
@@ -172,6 +188,7 @@ src/core/AssetManager.o: src/core/AssetManager.cpp.o
 # target to build an object file
 src/core/AssetManager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/AssetManager.cpp.o
 .PHONY : src/core/AssetManager.cpp.o
 
 src/core/AssetManager.i: src/core/AssetManager.cpp.i
@@ -180,6 +197,7 @@ src/core/AssetManager.i: src/core/AssetManager.cpp.i
 # target to preprocess a source file
 src/core/AssetManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/AssetManager.cpp.i
 .PHONY : src/core/AssetManager.cpp.i
 
 src/core/AssetManager.s: src/core/AssetManager.cpp.s
@@ -188,6 +206,7 @@ src/core/AssetManager.s: src/core/AssetManager.cpp.s
 # target to generate assembly for a file
 src/core/AssetManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/AssetManager.cpp.s
 .PHONY : src/core/AssetManager.cpp.s
 
 src/core/AudioManager.o: src/core/AudioManager.cpp.o
@@ -196,6 +215,7 @@ src/core/AudioManager.o: src/core/AudioManager.cpp.o
 # target to build an object file
 src/core/AudioManager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/AudioManager.cpp.o
 .PHONY : src/core/AudioManager.cpp.o
 
 src/core/AudioManager.i: src/core/AudioManager.cpp.i
@@ -204,6 +224,7 @@ src/core/AudioManager.i: src/core/AudioManager.cpp.i
 # target to preprocess a source file
 src/core/AudioManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/AudioManager.cpp.i
 .PHONY : src/core/AudioManager.cpp.i
 
 src/core/AudioManager.s: src/core/AudioManager.cpp.s
@@ -212,6 +233,7 @@ src/core/AudioManager.s: src/core/AudioManager.cpp.s
 # target to generate assembly for a file
 src/core/AudioManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/AudioManager.cpp.s
 .PHONY : src/core/AudioManager.cpp.s
 
 src/core/Game.o: src/core/Game.cpp.o
@@ -220,6 +242,7 @@ src/core/Game.o: src/core/Game.cpp.o
 # target to build an object file
 src/core/Game.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/Game.cpp.o
 .PHONY : src/core/Game.cpp.o
 
 src/core/Game.i: src/core/Game.cpp.i
@@ -228,6 +251,7 @@ src/core/Game.i: src/core/Game.cpp.i
 # target to preprocess a source file
 src/core/Game.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/Game.cpp.i
 .PHONY : src/core/Game.cpp.i
 
 src/core/Game.s: src/core/Game.cpp.s
@@ -236,6 +260,7 @@ src/core/Game.s: src/core/Game.cpp.s
 # target to generate assembly for a file
 src/core/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/core/Game.cpp.s
 .PHONY : src/core/Game.cpp.s
 
 src/entities/Ball.o: src/entities/Ball.cpp.o
@@ -244,6 +269,7 @@ src/entities/Ball.o: src/entities/Ball.cpp.o
 # target to build an object file
 src/entities/Ball.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/Ball.cpp.o
 .PHONY : src/entities/Ball.cpp.o
 
 src/entities/Ball.i: src/entities/Ball.cpp.i
@@ -252,6 +278,7 @@ src/entities/Ball.i: src/entities/Ball.cpp.i
 # target to preprocess a source file
 src/entities/Ball.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/Ball.cpp.i
 .PHONY : src/entities/Ball.cpp.i
 
 src/entities/Ball.s: src/entities/Ball.cpp.s
@@ -260,6 +287,7 @@ src/entities/Ball.s: src/entities/Ball.cpp.s
 # target to generate assembly for a file
 src/entities/Ball.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/Ball.cpp.s
 .PHONY : src/entities/Ball.cpp.s
 
 src/entities/Paddle.o: src/entities/Paddle.cpp.o
@@ -268,6 +296,7 @@ src/entities/Paddle.o: src/entities/Paddle.cpp.o
 # target to build an object file
 src/entities/Paddle.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/Paddle.cpp.o
 .PHONY : src/entities/Paddle.cpp.o
 
 src/entities/Paddle.i: src/entities/Paddle.cpp.i
@@ -276,6 +305,7 @@ src/entities/Paddle.i: src/entities/Paddle.cpp.i
 # target to preprocess a source file
 src/entities/Paddle.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/Paddle.cpp.i
 .PHONY : src/entities/Paddle.cpp.i
 
 src/entities/Paddle.s: src/entities/Paddle.cpp.s
@@ -284,6 +314,7 @@ src/entities/Paddle.s: src/entities/Paddle.cpp.s
 # target to generate assembly for a file
 src/entities/Paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/Paddle.cpp.s
 .PHONY : src/entities/Paddle.cpp.s
 
 src/entities/PowerUp.o: src/entities/PowerUp.cpp.o
@@ -292,6 +323,7 @@ src/entities/PowerUp.o: src/entities/PowerUp.cpp.o
 # target to build an object file
 src/entities/PowerUp.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/PowerUp.cpp.o
 .PHONY : src/entities/PowerUp.cpp.o
 
 src/entities/PowerUp.i: src/entities/PowerUp.cpp.i
@@ -300,6 +332,7 @@ src/entities/PowerUp.i: src/entities/PowerUp.cpp.i
 # target to preprocess a source file
 src/entities/PowerUp.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/PowerUp.cpp.i
 .PHONY : src/entities/PowerUp.cpp.i
 
 src/entities/PowerUp.s: src/entities/PowerUp.cpp.s
@@ -308,6 +341,7 @@ src/entities/PowerUp.s: src/entities/PowerUp.cpp.s
 # target to generate assembly for a file
 src/entities/PowerUp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/entities/PowerUp.cpp.s
 .PHONY : src/entities/PowerUp.cpp.s
 
 src/states/StateGame.o: src/states/StateGame.cpp.o
@@ -316,6 +350,7 @@ src/states/StateGame.o: src/states/StateGame.cpp.o
 # target to build an object file
 src/states/StateGame.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateGame.cpp.o
 .PHONY : src/states/StateGame.cpp.o
 
 src/states/StateGame.i: src/states/StateGame.cpp.i
@@ -324,6 +359,7 @@ src/states/StateGame.i: src/states/StateGame.cpp.i
 # target to preprocess a source file
 src/states/StateGame.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateGame.cpp.i
 .PHONY : src/states/StateGame.cpp.i
 
 src/states/StateGame.s: src/states/StateGame.cpp.s
@@ -332,6 +368,7 @@ src/states/StateGame.s: src/states/StateGame.cpp.s
 # target to generate assembly for a file
 src/states/StateGame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateGame.cpp.s
 .PHONY : src/states/StateGame.cpp.s
 
 src/states/StateGameOver.o: src/states/StateGameOver.cpp.o
@@ -340,6 +377,7 @@ src/states/StateGameOver.o: src/states/StateGameOver.cpp.o
 # target to build an object file
 src/states/StateGameOver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateGameOver.cpp.o
 .PHONY : src/states/StateGameOver.cpp.o
 
 src/states/StateGameOver.i: src/states/StateGameOver.cpp.i
@@ -348,6 +386,7 @@ src/states/StateGameOver.i: src/states/StateGameOver.cpp.i
 # target to preprocess a source file
 src/states/StateGameOver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateGameOver.cpp.i
 .PHONY : src/states/StateGameOver.cpp.i
 
 src/states/StateGameOver.s: src/states/StateGameOver.cpp.s
@@ -356,6 +395,7 @@ src/states/StateGameOver.s: src/states/StateGameOver.cpp.s
 # target to generate assembly for a file
 src/states/StateGameOver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateGameOver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateGameOver.cpp.s
 .PHONY : src/states/StateGameOver.cpp.s
 
 src/states/StateMenu.o: src/states/StateMenu.cpp.o
@@ -364,6 +404,7 @@ src/states/StateMenu.o: src/states/StateMenu.cpp.o
 # target to build an object file
 src/states/StateMenu.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateMenu.cpp.o
 .PHONY : src/states/StateMenu.cpp.o
 
 src/states/StateMenu.i: src/states/StateMenu.cpp.i
@@ -372,6 +413,7 @@ src/states/StateMenu.i: src/states/StateMenu.cpp.i
 # target to preprocess a source file
 src/states/StateMenu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateMenu.cpp.i
 .PHONY : src/states/StateMenu.cpp.i
 
 src/states/StateMenu.s: src/states/StateMenu.cpp.s
@@ -380,6 +422,7 @@ src/states/StateMenu.s: src/states/StateMenu.cpp.s
 # target to generate assembly for a file
 src/states/StateMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StateMenu.cpp.s
 .PHONY : src/states/StateMenu.cpp.s
 
 src/states/StatePause.o: src/states/StatePause.cpp.o
@@ -388,6 +431,7 @@ src/states/StatePause.o: src/states/StatePause.cpp.o
 # target to build an object file
 src/states/StatePause.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StatePause.cpp.o
 .PHONY : src/states/StatePause.cpp.o
 
 src/states/StatePause.i: src/states/StatePause.cpp.i
@@ -396,6 +440,7 @@ src/states/StatePause.i: src/states/StatePause.cpp.i
 # target to preprocess a source file
 src/states/StatePause.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StatePause.cpp.i
 .PHONY : src/states/StatePause.cpp.i
 
 src/states/StatePause.s: src/states/StatePause.cpp.s
@@ -404,6 +449,7 @@ src/states/StatePause.s: src/states/StatePause.cpp.s
 # target to generate assembly for a file
 src/states/StatePause.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/states/StatePause.cpp.s
 .PHONY : src/states/StatePause.cpp.s
 
 src/systems/AIController.o: src/systems/AIController.cpp.o
@@ -412,6 +458,7 @@ src/systems/AIController.o: src/systems/AIController.cpp.o
 # target to build an object file
 src/systems/AIController.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/AIController.cpp.o
 .PHONY : src/systems/AIController.cpp.o
 
 src/systems/AIController.i: src/systems/AIController.cpp.i
@@ -420,6 +467,7 @@ src/systems/AIController.i: src/systems/AIController.cpp.i
 # target to preprocess a source file
 src/systems/AIController.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/AIController.cpp.i
 .PHONY : src/systems/AIController.cpp.i
 
 src/systems/AIController.s: src/systems/AIController.cpp.s
@@ -428,6 +476,7 @@ src/systems/AIController.s: src/systems/AIController.cpp.s
 # target to generate assembly for a file
 src/systems/AIController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/AIController.cpp.s
 .PHONY : src/systems/AIController.cpp.s
 
 src/systems/HighScoreTable.o: src/systems/HighScoreTable.cpp.o
@@ -436,6 +485,7 @@ src/systems/HighScoreTable.o: src/systems/HighScoreTable.cpp.o
 # target to build an object file
 src/systems/HighScoreTable.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/HighScoreTable.cpp.o
 .PHONY : src/systems/HighScoreTable.cpp.o
 
 src/systems/HighScoreTable.i: src/systems/HighScoreTable.cpp.i
@@ -444,6 +494,7 @@ src/systems/HighScoreTable.i: src/systems/HighScoreTable.cpp.i
 # target to preprocess a source file
 src/systems/HighScoreTable.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/HighScoreTable.cpp.i
 .PHONY : src/systems/HighScoreTable.cpp.i
 
 src/systems/HighScoreTable.s: src/systems/HighScoreTable.cpp.s
@@ -452,6 +503,7 @@ src/systems/HighScoreTable.s: src/systems/HighScoreTable.cpp.s
 # target to generate assembly for a file
 src/systems/HighScoreTable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/HighScoreTable.cpp.s
 .PHONY : src/systems/HighScoreTable.cpp.s
 
 src/systems/PhysicsSystem.o: src/systems/PhysicsSystem.cpp.o
@@ -460,6 +512,7 @@ src/systems/PhysicsSystem.o: src/systems/PhysicsSystem.cpp.o
 # target to build an object file
 src/systems/PhysicsSystem.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/PhysicsSystem.cpp.o
 .PHONY : src/systems/PhysicsSystem.cpp.o
 
 src/systems/PhysicsSystem.i: src/systems/PhysicsSystem.cpp.i
@@ -468,6 +521,7 @@ src/systems/PhysicsSystem.i: src/systems/PhysicsSystem.cpp.i
 # target to preprocess a source file
 src/systems/PhysicsSystem.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/PhysicsSystem.cpp.i
 .PHONY : src/systems/PhysicsSystem.cpp.i
 
 src/systems/PhysicsSystem.s: src/systems/PhysicsSystem.cpp.s
@@ -476,6 +530,7 @@ src/systems/PhysicsSystem.s: src/systems/PhysicsSystem.cpp.s
 # target to generate assembly for a file
 src/systems/PhysicsSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PhysicsSystem.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/PhysicsSystem.cpp.s
 .PHONY : src/systems/PhysicsSystem.cpp.s
 
 src/systems/PowerUpSystem.o: src/systems/PowerUpSystem.cpp.o
@@ -484,6 +539,7 @@ src/systems/PowerUpSystem.o: src/systems/PowerUpSystem.cpp.o
 # target to build an object file
 src/systems/PowerUpSystem.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/PowerUpSystem.cpp.o
 .PHONY : src/systems/PowerUpSystem.cpp.o
 
 src/systems/PowerUpSystem.i: src/systems/PowerUpSystem.cpp.i
@@ -492,6 +548,7 @@ src/systems/PowerUpSystem.i: src/systems/PowerUpSystem.cpp.i
 # target to preprocess a source file
 src/systems/PowerUpSystem.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/PowerUpSystem.cpp.i
 .PHONY : src/systems/PowerUpSystem.cpp.i
 
 src/systems/PowerUpSystem.s: src/systems/PowerUpSystem.cpp.s
@@ -500,6 +557,7 @@ src/systems/PowerUpSystem.s: src/systems/PowerUpSystem.cpp.s
 # target to generate assembly for a file
 src/systems/PowerUpSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/PowerUpSystem.cpp.s
 .PHONY : src/systems/PowerUpSystem.cpp.s
 
 src/systems/ScoreSystem.o: src/systems/ScoreSystem.cpp.o
@@ -508,6 +566,7 @@ src/systems/ScoreSystem.o: src/systems/ScoreSystem.cpp.o
 # target to build an object file
 src/systems/ScoreSystem.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/ScoreSystem.cpp.o
 .PHONY : src/systems/ScoreSystem.cpp.o
 
 src/systems/ScoreSystem.i: src/systems/ScoreSystem.cpp.i
@@ -516,6 +575,7 @@ src/systems/ScoreSystem.i: src/systems/ScoreSystem.cpp.i
 # target to preprocess a source file
 src/systems/ScoreSystem.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/ScoreSystem.cpp.i
 .PHONY : src/systems/ScoreSystem.cpp.i
 
 src/systems/ScoreSystem.s: src/systems/ScoreSystem.cpp.s
@@ -524,6 +584,7 @@ src/systems/ScoreSystem.s: src/systems/ScoreSystem.cpp.s
 # target to generate assembly for a file
 src/systems/ScoreSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/systems/ScoreSystem.cpp.s
 .PHONY : src/systems/ScoreSystem.cpp.s
 
 src/ui/HUD.o: src/ui/HUD.cpp.o
@@ -532,6 +593,7 @@ src/ui/HUD.o: src/ui/HUD.cpp.o
 # target to build an object file
 src/ui/HUD.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/ui/HUD.cpp.o
 .PHONY : src/ui/HUD.cpp.o
 
 src/ui/HUD.i: src/ui/HUD.cpp.i
@@ -540,6 +602,7 @@ src/ui/HUD.i: src/ui/HUD.cpp.i
 # target to preprocess a source file
 src/ui/HUD.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/ui/HUD.cpp.i
 .PHONY : src/ui/HUD.cpp.i
 
 src/ui/HUD.s: src/ui/HUD.cpp.s
@@ -548,6 +611,7 @@ src/ui/HUD.s: src/ui/HUD.cpp.s
 # target to generate assembly for a file
 src/ui/HUD.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern_asan.dir/build.make CMakeFiles/CyberPongModern_asan.dir/src/ui/HUD.cpp.s
 .PHONY : src/ui/HUD.cpp.s
 
 # Help Target
@@ -560,6 +624,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... memcheck"
 	@echo "... CyberPongModern"
+	@echo "... CyberPongModern_asan"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

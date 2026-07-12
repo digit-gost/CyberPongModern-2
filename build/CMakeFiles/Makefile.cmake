@@ -60,4 +60,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/CyberPongModern.dir/DependInfo.cmake"
   "CMakeFiles/memcheck.dir/DependInfo.cmake"
+  "CMakeFiles/CyberPongModern_asan.dir/DependInfo.cmake"
   )
