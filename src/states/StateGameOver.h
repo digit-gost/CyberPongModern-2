@@ -5,7 +5,7 @@
 
 class StateGameOver : public State {
 public:
-    StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int setsRight);
+    StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int setsRight, bool isDefeat);
 
     void handleEvent(const sf::Event& event) override;
     void update(float dt) override;

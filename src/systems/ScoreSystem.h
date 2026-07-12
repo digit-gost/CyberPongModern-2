@@ -16,6 +16,10 @@ public:
     bool isMatchOver() const { return matchOver; }
     Paddle::Side getMatchWinner() const { return winner; }
 
+    // Renvoie true UNE SEULE FOIS juste apres qu'un set vient d'etre gagne
+    // (utile pour jouer un son sans le rejouer a chaque frame suivante).
+    bool consumeSetWin(Paddle::Side& winnerOut);
+
     static constexpr int POINTS_TO_WIN_SET = 5;
     static constexpr int SETS_TO_WIN_MATCH = 3;
 
@@ -29,6 +33,9 @@ private:
     bool matchOver = false;
     Paddle::Side winner = Paddle::Side::LEFT;
     Paddle::Side lastScorer = Paddle::Side::LEFT;
+
+    bool setJustWon = false;
+    Paddle::Side setWinner = Paddle::Side::LEFT;
 
     void checkSetEnd();
 };

@@ -5,7 +5,7 @@
 #include <memory>
 #include <string>
 
-StateGameOver::StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int setsRight)
+StateGameOver::StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int setsRight, bool isDefeat)
     : State(game),
       winnerText(game.getAssets().getFont(Assets::FONT_MAIN),
                  winner == Paddle::Side::LEFT ? "CYAN-7 GAGNE !" : "NOVA-X GAGNE !", 52),
@@ -28,7 +28,11 @@ StateGameOver::StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int 
     savedHint.setFillColor(sf::Color(160, 160, 160));
     savedHint.setPosition({390.f, 450.f});
 
-    game.getAudio().playVictory();
+    if (isDefeat) {
+        game.getAudio().playDefeat();
+    } else {
+        game.getAudio().playVictory();
+    }
 }
 
 void StateGameOver::handleEvent(const sf::Event& event) {
@@ -38,7 +42,7 @@ void StateGameOver::handleEvent(const sf::Event& event) {
     }
 }
 
-void StateGameOver::update(float) {}
+void StateGameOver::update(float /*dt*/) {}
 
 void StateGameOver::draw(sf::RenderWindow& window) {
     window.draw(winnerText);

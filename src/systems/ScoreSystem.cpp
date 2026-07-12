@@ -23,10 +23,14 @@ void ScoreSystem::checkSetEnd() {
         setsLeft++;
         pointsLeft = 0;
         pointsRight = 0;
+        setJustWon = true;
+        setWinner = Paddle::Side::LEFT;
     } else if (pointsRight >= POINTS_TO_WIN_SET) {
         setsRight++;
         pointsLeft = 0;
         pointsRight = 0;
+        setJustWon = true;
+        setWinner = Paddle::Side::RIGHT;
     }
 
     if (setsLeft >= SETS_TO_WIN_MATCH) {
@@ -43,6 +47,7 @@ void ScoreSystem::reset() {
     setsLeft = setsRight = 0;
     totalPointsLeftAll = totalPointsRightAll = 0;
     matchOver = false;
+    setJustWon = false;
 }
 
 int ScoreSystem::getSetPoints(Paddle::Side side) const {
@@ -55,4 +60,11 @@ int ScoreSystem::getSets(Paddle::Side side) const {
 
 int ScoreSystem::getTotalPoints(Paddle::Side side) const {
     return side == Paddle::Side::LEFT ? totalPointsLeftAll : totalPointsRightAll;
+}
+
+bool ScoreSystem::consumeSetWin(Paddle::Side& winnerOut) {
+    if (!setJustWon) return false;
+    winnerOut = setWinner;
+    setJustWon = false;
+    return true;
 }

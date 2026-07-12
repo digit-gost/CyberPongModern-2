@@ -55,9 +55,14 @@ void StateGame::checkScoring() {
             Paddle::Side scorer = exitedLeft ? Paddle::Side::RIGHT : Paddle::Side::LEFT;
             scores.addPoint(scorer);
 
+            Paddle::Side setWinner;
+            if (scores.consumeSetWin(setWinner)) {
+                game.getAudio().playSetWin();
+            }
+
             if (balls.size() > 1) {
                 balls.erase(balls.begin() + (long)i);
-                continue; // ne pas incrementer i : la taille a change
+                continue;
             } else {
                 balls[i]->reset();
                 ++i;
@@ -73,10 +78,14 @@ void StateGame::checkScoring() {
         int value = scores.getTotalPoints(winner);
         game.getHighScores().addEntry(label, value);
 
+        bool isDefeat = (mode == GameMode::PVE && winner == Paddle::Side::RIGHT);
+
         game.changeState(std::make_unique<StateGameOver>(
             game, winner,
             scores.getSets(Paddle::Side::LEFT),
-            scores.getSets(Paddle::Side::RIGHT)));    }
+            scores.getSets(Paddle::Side::RIGHT),
+            isDefeat));
+    }
 }
 
 void StateGame::update(float dt) {
