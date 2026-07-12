@@ -899,6 +899,10 @@ CMakeFiles/CyberPongModern.dir/src/states/StatePause.cpp.o: \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateMenu.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/AIController.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Entity.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Ball.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Game.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AssetManager.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/../systems/HighScoreTable.h \

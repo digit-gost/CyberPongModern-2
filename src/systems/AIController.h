@@ -4,6 +4,15 @@
 
 enum class AIDifficulty { ROOKIE, CYBORG, NEXUS9 };
 
+inline const char* toString(AIDifficulty d) {
+    switch (d) {
+        case AIDifficulty::ROOKIE: return "Rookie";
+        case AIDifficulty::CYBORG: return "Cyborg";
+        case AIDifficulty::NEXUS9: return "NEXUS-9";
+    }
+    return "?";
+}
+
 class AIController {
 public:
     explicit AIController(AIDifficulty diff);
@@ -14,9 +23,9 @@ public:
 private:
     AIDifficulty difficulty;
 
-    float getReactionSpeed() const;   // fraction de la vitesse max de la raquette
-    float getPredictionError() const; // erreur de prédiction en pixels
-    float getReactionDelay() const;   // délai entre 2 recalculs de cible (s)
+    float getReactionSpeed() const;
+    float getPredictionError() const;
+    float getReactionDelay() const;
 
     float reactionTimer = 0.f;
     float targetY = 0.f;

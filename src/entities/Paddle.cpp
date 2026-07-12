@@ -13,15 +13,22 @@ Paddle::Paddle(sf::Vector2f startPos, Side side_)
     shape.setOrigin({WIDTH / 2.f, BASE_HEIGHT / 2.f});
     shape.setPosition(position);
 
-    // Couleur néon simple pour l'instant (cyan/magenta) — polish visuel au Jour 3
-    shape.setFillColor(side == Side::LEFT ? sf::Color::Cyan : sf::Color::Magenta);
+    baseColor = (side == Side::LEFT) ? sf::Color::Cyan : sf::Color::Magenta;
+    shape.setFillColor(baseColor);
 }
 
-void Paddle::update(float /*dt*/) {
+void Paddle::update(float dt) {
     clampToScreen();
     shape.setSize({WIDTH, BASE_HEIGHT * heightScale});
     shape.setOrigin({WIDTH / 2.f, (BASE_HEIGHT * heightScale) / 2.f});
     shape.setPosition(position);
+
+    if (flashTimer > 0.f) {
+        flashTimer -= dt;
+        shape.setFillColor(sf::Color::White);
+    } else {
+        shape.setFillColor(baseColor);
+    }
 }
 
 void Paddle::draw(sf::RenderWindow& window) {
@@ -32,6 +39,7 @@ void Paddle::reset() {
     position = startPosition;
     heightScale = 1.f;
     velocity = {0.f, 0.f};
+    flashTimer = 0.f;
 }
 
 sf::FloatRect Paddle::getBounds() const {
@@ -48,6 +56,10 @@ void Paddle::moveDown(float dt) {
 
 void Paddle::setHeightScale(float scale) {
     heightScale = scale;
+}
+
+void Paddle::triggerFlash() {
+    flashTimer = FLASH_DURATION;
 }
 
 void Paddle::clampToScreen() {

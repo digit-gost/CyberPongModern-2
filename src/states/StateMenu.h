@@ -1,5 +1,6 @@
 #pragma once
 #include "State.h"
+#include "../systems/AIController.h"
 #include <SFML/Graphics.hpp>
 
 class StateMenu : public State {
@@ -16,12 +17,15 @@ private:
     sf::Text optionPVP;
     sf::Text optionScores;
     sf::Text optionQuit;
+    sf::Text controlsHint;
     sf::Text scoresListText;
     sf::Text backHint;
 
     int selectedIndex = 0; // 0=PVE, 1=PVP, 2=Scores, 3=Quitter
     bool showingScores = false;
+    AIDifficulty selectedDifficulty = AIDifficulty::CYBORG;
 
     void updateSelectionVisuals();
+    void updatePVEText();
     void buildScoresList();
 };

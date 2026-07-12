@@ -18,38 +18,32 @@ void PhysicsSystem::resolveWallCollision(Ball& ball, int screenHeight) {
     }
 }
 
-void PhysicsSystem::resolvePaddleCollision(Ball& ball, const Paddle& paddle) {
+void PhysicsSystem::resolvePaddleCollision(Ball& ball, Paddle& paddle) {
     sf::FloatRect ballBounds = ball.getBounds();
     sf::FloatRect paddleBounds = paddle.getBounds();
 
     if (!ballBounds.findIntersection(paddleBounds).has_value()) return;
 
-    // 1. Calculer la position relative d'impact [-1.0 (haut) ... +1.0 (bas)]
     float ballCenterY = ballBounds.position.y + ballBounds.size.y / 2.f;
     float paddleCenterY = paddleBounds.position.y + paddleBounds.size.y / 2.f;
     float relativeHit = (ballCenterY - paddleCenterY) / (paddleBounds.size.y / 2.f);
     relativeHit = std::clamp(relativeHit, -1.f, 1.f);
 
-    // 2. Calculer le nouvel angle (max ±75 degrés)
     float bounceAngle = relativeHit * 75.f * (float)(M_PI / 180.0);
 
-    // 3. Augmenter légèrement la vitesse à chaque échange
     float speed = std::hypot(ball.getVelocity().x, ball.getVelocity().y);
     speed = std::min(speed * SPEED_INCREASE_FACTOR, MAX_BALL_SPEED);
 
-    // 4. Inverser la direction X, appliquer le nouvel angle
     float dirX = (ball.getVelocity().x > 0) ? -1.f : 1.f;
     ball.setVelocity({
         dirX * speed * std::cos(bounceAngle),
         speed * std::sin(bounceAngle)
     });
 
-    // 5. Empêcher la balle de rester dans la raquette (correction de position)
     float correction = paddle.isLeftSide()
         ? paddleBounds.position.x + paddleBounds.size.x - ballBounds.position.x + 1.f
         : paddleBounds.position.x - ballBounds.position.x - ballBounds.size.x - 1.f;
     ball.move({correction, 0.f});
 
-    // NOTE (Jour 3) : émettre ici un événement d'impact (flash visuel, son)
-    // via un système Observer, ex. onPaddleHit.emit(paddle.getSide(), relativeHit);
+    paddle.triggerFlash(); // effet de flash a l'impact (obligatoire)
 }

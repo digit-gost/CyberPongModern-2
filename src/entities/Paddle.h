@@ -12,25 +12,28 @@ public:
     void reset() override;
     sf::FloatRect getBounds() const override;
 
-    // Déplacement contrôlé par le clavier (appelé depuis Game::processEvents/update)
     void moveUp(float dt);
     void moveDown(float dt);
 
     bool isLeftSide() const { return side == Side::LEFT; }
     Side getSide() const { return side; }
 
-    // Utilisé par les power-ups BIG PADDLE / TINY PADDLE (Jour 3)
     void setHeightScale(float scale);
+    void triggerFlash(); // effet visuel a l'impact (obligatoire, section 2.1.4)
 
     static constexpr float WIDTH = 20.f;
     static constexpr float BASE_HEIGHT = 100.f;
-    static constexpr float SPEED = 500.f; // pixels/seconde
+    static constexpr float SPEED = 500.f;
 
 private:
     sf::RectangleShape shape;
     Side side;
     sf::Vector2f startPosition;
     float heightScale = 1.f;
+    sf::Color baseColor;
+
+    float flashTimer = 0.f;
+    static constexpr float FLASH_DURATION = 0.12f;
 
     void clampToScreen();
 };

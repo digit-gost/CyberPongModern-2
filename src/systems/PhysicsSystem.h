@@ -4,12 +4,9 @@
 
 class PhysicsSystem {
 public:
-    // Rebond sur les bords haut/bas de l'écran
     void resolveWallCollision(Ball& ball, int screenHeight);
+    void resolvePaddleCollision(Ball& ball, Paddle& paddle); // non-const : declenche le flash
 
-    // Rebond sur une raquette : angle selon le point d'impact + accélération
-    void resolvePaddleCollision(Ball& ball, const Paddle& paddle);
-
-    static constexpr float SPEED_INCREASE_FACTOR = 1.05f; // +5% par échange
-    static constexpr float MAX_BALL_SPEED = 900.f;        // pixels/seconde
+    static constexpr float SPEED_INCREASE_FACTOR = 1.05f;
+    static constexpr float MAX_BALL_SPEED = 900.f;
 };

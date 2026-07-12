@@ -898,19 +898,18 @@ CMakeFiles/CyberPongModern.dir/src/states/StateMenu.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/AIController.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Entity.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Ball.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/GameMode.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Entity.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Paddle.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/PhysicsSystem.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/AIController.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/ScoreSystem.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/PowerUpSystem.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/PowerUp.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Entity.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../ui/HUD.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Game.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AssetManager.h \

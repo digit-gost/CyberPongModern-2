@@ -900,4 +900,8 @@ CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/HighScoreTable.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/State.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/StateMenu.h
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/StateMenu.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/AIController.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/../entities/Paddle.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/../entities/Entity.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/../entities/Ball.h

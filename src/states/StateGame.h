@@ -13,8 +13,8 @@
 
 class StateGame : public State {
 public:
-    StateGame(Game& game, GameMode mode);
-
+    StateGame(Game& game, GameMode mode, AIDifficulty difficulty = AIDifficulty::CYBORG);
+    
     void handleEvent(const sf::Event& event) override;
     void update(float dt) override;
     void draw(sf::RenderWindow& window) override;

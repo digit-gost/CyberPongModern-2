@@ -8,10 +8,10 @@
 #include <memory>
 #include <string>
 
-StateGame::StateGame(Game& game, GameMode mode_)
+StateGame::StateGame(Game& game, GameMode mode_, AIDifficulty difficulty)
     : State(game),
       mode(mode_),
-      ai(mode_ == GameMode::PVE ? std::make_unique<AIController>(AIDifficulty::CYBORG) : nullptr),
+      ai(mode_ == GameMode::PVE ? std::make_unique<AIController>(difficulty) : nullptr),
       hud(game.getAssets().getFont(Assets::FONT_MAIN))
 {
     balls.push_back(std::make_unique<Ball>(sf::Vector2f(Game::WINDOW_W / 2.f, Game::WINDOW_H / 2.f)));
@@ -73,8 +73,10 @@ void StateGame::checkScoring() {
         int value = scores.getTotalPoints(winner);
         game.getHighScores().addEntry(label, value);
 
-        game.changeState(std::make_unique<StateGameOver>(game, winner));
-    }
+        game.changeState(std::make_unique<StateGameOver>(
+            game, winner,
+            scores.getSets(Paddle::Side::LEFT),
+            scores.getSets(Paddle::Side::RIGHT)));    }
 }
 
 void StateGame::update(float dt) {

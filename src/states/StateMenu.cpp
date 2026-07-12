@@ -10,10 +10,12 @@
 StateMenu::StateMenu(Game& game)
     : State(game),
       titleText(game.getAssets().getFont(Assets::FONT_MAIN), "CYBER PONG MODERN", 56),
-      optionPVE(game.getAssets().getFont(Assets::FONT_MAIN), "Jouer (1P vs IA)", 32),
+      optionPVE(game.getAssets().getFont(Assets::FONT_MAIN), "", 32),
       optionPVP(game.getAssets().getFont(Assets::FONT_MAIN), "Duel (2P)", 32),
       optionScores(game.getAssets().getFont(Assets::FONT_MAIN), "Meilleurs scores", 32),
       optionQuit(game.getAssets().getFont(Assets::FONT_MAIN), "Quitter", 32),
+      controlsHint(game.getAssets().getFont(Assets::FONT_MAIN),
+                   "Gauche/Droite : difficulte IA   |   Entree : valider", 18),
       scoresListText(game.getAssets().getFont(Assets::FONT_MAIN), "", 28),
       backHint(game.getAssets().getFont(Assets::FONT_MAIN), "Echap ou Entree : retour", 20)
 {
@@ -25,13 +27,21 @@ StateMenu::StateMenu(Game& game)
     optionScores.setPosition({520.f, 400.f});
     optionQuit.setPosition({520.f, 460.f});
 
+    controlsHint.setFillColor(sf::Color(180, 180, 180));
+    controlsHint.setPosition({380.f, 520.f});
+
     scoresListText.setFillColor(sf::Color::White);
     scoresListText.setPosition({480.f, 250.f});
 
     backHint.setFillColor(sf::Color(180, 180, 180));
     backHint.setPosition({430.f, 560.f});
 
+    updatePVEText();
     updateSelectionVisuals();
+}
+
+void StateMenu::updatePVEText() {
+    optionPVE.setString(std::string("Jouer (1P vs IA) - ") + toString(selectedDifficulty));
 }
 
 void StateMenu::updateSelectionVisuals() {
@@ -68,6 +78,19 @@ void StateMenu::handleEvent(const sf::Event& event) {
         return;
     }
 
+    if (selectedIndex == 0 &&
+        (key->code == sf::Keyboard::Key::Left || key->code == sf::Keyboard::Key::Right)) {
+        int level = static_cast<int>(selectedDifficulty);
+        if (key->code == sf::Keyboard::Key::Left) {
+            level = (level + 2) % 3;
+        } else {
+            level = (level + 1) % 3;
+        }
+        selectedDifficulty = static_cast<AIDifficulty>(level);
+        updatePVEText();
+        return;
+    }
+
     if (key->code == sf::Keyboard::Key::Up) {
         selectedIndex = (selectedIndex + 3) % 4;
         updateSelectionVisuals();
@@ -76,7 +99,7 @@ void StateMenu::handleEvent(const sf::Event& event) {
         updateSelectionVisuals();
     } else if (key->code == sf::Keyboard::Key::Enter) {
         if (selectedIndex == 0) {
-            game.changeState(std::make_unique<StateGame>(game, GameMode::PVE));
+            game.changeState(std::make_unique<StateGame>(game, GameMode::PVE, selectedDifficulty));
         } else if (selectedIndex == 1) {
             game.changeState(std::make_unique<StateGame>(game, GameMode::PVP));
         } else if (selectedIndex == 2) {
@@ -103,5 +126,6 @@ void StateMenu::draw(sf::RenderWindow& window) {
         window.draw(optionPVP);
         window.draw(optionScores);
         window.draw(optionQuit);
+        window.draw(controlsHint);
     }
 }
