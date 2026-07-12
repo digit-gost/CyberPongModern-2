@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CyberPongModern.dir/main.cpp.o.d"
   "CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o"
   "CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o.d"
+  "CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.o"
+  "CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.o.d"
   "CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o"
   "CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o.d"
   "CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o"

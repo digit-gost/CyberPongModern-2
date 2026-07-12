@@ -18,11 +18,11 @@ void PhysicsSystem::resolveWallCollision(Ball& ball, int screenHeight) {
     }
 }
 
-void PhysicsSystem::resolvePaddleCollision(Ball& ball, Paddle& paddle) {
+bool PhysicsSystem::resolvePaddleCollision(Ball& ball, Paddle& paddle) {
     sf::FloatRect ballBounds = ball.getBounds();
     sf::FloatRect paddleBounds = paddle.getBounds();
 
-    if (!ballBounds.findIntersection(paddleBounds).has_value()) return;
+    if (!ballBounds.findIntersection(paddleBounds).has_value()) return false;
 
     float ballCenterY = ballBounds.position.y + ballBounds.size.y / 2.f;
     float paddleCenterY = paddleBounds.position.y + paddleBounds.size.y / 2.f;
@@ -45,5 +45,6 @@ void PhysicsSystem::resolvePaddleCollision(Ball& ball, Paddle& paddle) {
         : paddleBounds.position.x - ballBounds.position.x - ballBounds.size.x - 1.f;
     ball.move({correction, 0.f});
 
-    paddle.triggerFlash(); // effet de flash a l'impact (obligatoire)
+    paddle.triggerFlash();
+    return true;
 }

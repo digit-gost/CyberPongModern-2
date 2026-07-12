@@ -898,6 +898,27 @@ CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h \
+  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AudioManager.h \
+  /usr/local/include/SFML/Audio.hpp \
+  /usr/local/include/SFML/Audio/InputSoundFile.hpp \
+  /usr/local/include/SFML/Audio/Export.hpp \
+  /usr/local/include/SFML/Audio/SoundFileReader.hpp \
+  /usr/local/include/SFML/Audio/SoundChannel.hpp \
+  /usr/local/include/SFML/Audio/Listener.hpp \
+  /usr/local/include/SFML/Audio/Music.hpp \
+  /usr/local/include/SFML/Audio/SoundStream.hpp \
+  /usr/local/include/SFML/Audio/SoundSource.hpp \
+  /usr/local/include/SFML/Audio/AudioResource.hpp \
+  /usr/local/include/SFML/Audio/OutputSoundFile.hpp \
+  /usr/local/include/SFML/Audio/SoundFileWriter.hpp \
+  /usr/local/include/SFML/Audio/PlaybackDevice.hpp \
+  /usr/local/include/SFML/Audio/Sound.hpp \
+  /usr/local/include/SFML/Audio/SoundBuffer.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
+  /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /usr/local/include/SFML/Audio/SoundRecorder.hpp \
+  /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
+  /usr/local/include/SFML/Audio/SoundFileFactory.inl \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/HighScoreTable.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/State.h \
   /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/StateMenu.h \

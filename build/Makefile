@@ -190,6 +190,30 @@ src/core/AssetManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.s
 .PHONY : src/core/AssetManager.cpp.s
 
+src/core/AudioManager.o: src/core/AudioManager.cpp.o
+.PHONY : src/core/AudioManager.o
+
+# target to build an object file
+src/core/AudioManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.o
+.PHONY : src/core/AudioManager.cpp.o
+
+src/core/AudioManager.i: src/core/AudioManager.cpp.i
+.PHONY : src/core/AudioManager.i
+
+# target to preprocess a source file
+src/core/AudioManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.i
+.PHONY : src/core/AudioManager.cpp.i
+
+src/core/AudioManager.s: src/core/AudioManager.cpp.s
+.PHONY : src/core/AudioManager.s
+
+# target to generate assembly for a file
+src/core/AudioManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CyberPongModern.dir/build.make CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.s
+.PHONY : src/core/AudioManager.cpp.s
+
 src/core/Game.o: src/core/Game.cpp.o
 .PHONY : src/core/Game.o
 
@@ -542,6 +566,9 @@ help:
 	@echo "... src/core/AssetManager.o"
 	@echo "... src/core/AssetManager.i"
 	@echo "... src/core/AssetManager.s"
+	@echo "... src/core/AudioManager.o"
+	@echo "... src/core/AudioManager.i"
+	@echo "... src/core/AudioManager.s"
 	@echo "... src/core/Game.o"
 	@echo "... src/core/Game.i"
 	@echo "... src/core/Game.s"

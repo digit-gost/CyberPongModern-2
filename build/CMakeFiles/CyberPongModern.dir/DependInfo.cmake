@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/sankhare/Downloads/CyberPongModern-2/main.cpp" "CMakeFiles/CyberPongModern.dir/main.cpp.o" "gcc" "CMakeFiles/CyberPongModern.dir/main.cpp.o.d"
   "/Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.cpp" "CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o" "gcc" "CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o.d"
+  "/Users/sankhare/Downloads/CyberPongModern-2/src/core/AudioManager.cpp" "CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.o" "gcc" "CMakeFiles/CyberPongModern.dir/src/core/AudioManager.cpp.o.d"
   "/Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.cpp" "CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o" "gcc" "CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o.d"
   "/Users/sankhare/Downloads/CyberPongModern-2/src/entities/Ball.cpp" "CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o" "gcc" "CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o.d"
   "/Users/sankhare/Downloads/CyberPongModern-2/src/entities/Paddle.cpp" "CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o" "gcc" "CMakeFiles/CyberPongModern.dir/src/entities/Paddle.cpp.o.d"

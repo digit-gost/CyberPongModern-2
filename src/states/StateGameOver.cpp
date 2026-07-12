@@ -8,7 +8,7 @@
 StateGameOver::StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int setsRight)
     : State(game),
       winnerText(game.getAssets().getFont(Assets::FONT_MAIN),
-                 winner == Paddle::Side::LEFT ? "CYAN-7 GAGNE !" : "GAME OVERRRR", 52),
+                 winner == Paddle::Side::LEFT ? "CYAN-7 GAGNE !" : "NOVA-X GAGNE !", 52),
       recapText(game.getAssets().getFont(Assets::FONT_MAIN),
                 "Sets finaux : CYAN-7  " + std::to_string(setsLeft) + " - " +
                 std::to_string(setsRight) + "  NOVA-X", 26),
@@ -27,6 +27,8 @@ StateGameOver::StateGameOver(Game& game, Paddle::Side winner, int setsLeft, int 
 
     savedHint.setFillColor(sf::Color(160, 160, 160));
     savedHint.setPosition({390.f, 450.f});
+
+    game.getAudio().playVictory();
 }
 
 void StateGameOver::handleEvent(const sf::Event& event) {

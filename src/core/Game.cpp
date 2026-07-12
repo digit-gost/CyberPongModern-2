@@ -10,8 +10,9 @@ Game::Game()
 {
     window.setFramerateLimit(144);
     highScores.load();
+    audio.startMusic();
     changeState(std::make_unique<StateMenu>(*this));
-    applyPendingStateChange(); // on applique tout de suite le tout premier état
+    applyPendingStateChange();
 }
 
 Game::~Game() = default;
@@ -34,8 +35,6 @@ void Game::run() {
             states.back()->update(dt);
         }
 
-        // Appliqué seulement maintenant : update() est totalement terminé,
-        // donc détruire l'ancien état ici ne casse plus rien.
         applyPendingStateChange();
 
         window.clear(sf::Color(10, 10, 20));

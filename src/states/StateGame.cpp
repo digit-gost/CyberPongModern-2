@@ -88,10 +88,12 @@ void StateGame::update(float dt) {
     for (auto& ballPtr : balls) {
         ballPtr->update(dt);
         physics.resolveWallCollision(*ballPtr, Game::WINDOW_H);
-        physics.resolvePaddleCollision(*ballPtr, *paddleLeft);
-        physics.resolvePaddleCollision(*ballPtr, *paddleRight);
+        bool hitLeft = physics.resolvePaddleCollision(*ballPtr, *paddleLeft);
+        bool hitRight = physics.resolvePaddleCollision(*ballPtr, *paddleRight);
+        if (hitLeft || hitRight) {
+            game.getAudio().playPaddleHit();
+        }
     }
-
     if (ai && !balls.empty()) {
         ai->update(*paddleRight, *balls[0], dt);
     }
