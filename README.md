@@ -131,7 +131,4 @@ CyberPongModern/
     └── sounds/ (paddle_hit.wav, victory.wav, defeat.wav, set_win.wav, ambiance.ogg)
 ```
 
-## Équipe
-
-- Étudiant A (Architecture) : *à compléter*
-- Étudiant B (Gameplay & Visuels) : *à compléter*
+## Développé par Serigne Abdou Khadre Mbacke SANKHARE
