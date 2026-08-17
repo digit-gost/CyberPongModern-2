@@ -1,8 +1,8 @@
 CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/AIController.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/AIController.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/AIController.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/AIController.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Entity.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -899,7 +899,7 @@ CMakeFiles/CyberPongModern.dir/src/systems/AIController.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Ball.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Ball.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \

@@ -1,6 +1,6 @@
 CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/HUD.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/HUD.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/ui/HUD.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/ui/HUD.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -897,9 +897,9 @@ CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/Game.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/AudioManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/ui/../core/Game.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/ui/../core/AssetManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/ui/../core/AudioManager.h \
   /usr/local/include/SFML/Audio.hpp \
   /usr/local/include/SFML/Audio/InputSoundFile.hpp \
   /usr/local/include/SFML/Audio/Export.hpp \
@@ -920,4 +920,4 @@ CMakeFiles/CyberPongModern.dir/src/ui/HUD.cpp.o: \
   /usr/local/include/SFML/Audio/SoundRecorder.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.inl \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/ui/../core/../systems/HighScoreTable.h
+  /Users/sankhare/Documents/CyberPongModern-2/src/ui/../core/../systems/HighScoreTable.h

@@ -1,8 +1,8 @@
 CMakeFiles/CyberPongModern_asan.dir/src/entities/Paddle.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Paddle.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Paddle.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Entity.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \

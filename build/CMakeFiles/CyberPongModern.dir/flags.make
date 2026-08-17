@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/sankhare/Downloads/CyberPongModern-2/src
+CXX_INCLUDES = -I/Users/sankhare/Documents/CyberPongModern-2/src
 
 CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
 

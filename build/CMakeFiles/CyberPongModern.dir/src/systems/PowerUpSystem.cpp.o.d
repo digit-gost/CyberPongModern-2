@@ -1,6 +1,6 @@
 CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/PowerUpSystem.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/PowerUpSystem.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/PowerUpSystem.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/PowerUpSystem.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -897,13 +897,13 @@ CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/PowerUp.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Entity.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../core/Game.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../core/AudioManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/PowerUp.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Ball.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../core/Game.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../core/AssetManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../core/AudioManager.h \
   /usr/local/include/SFML/Audio.hpp \
   /usr/local/include/SFML/Audio/InputSoundFile.hpp \
   /usr/local/include/SFML/Audio/Export.hpp \
@@ -924,7 +924,7 @@ CMakeFiles/CyberPongModern.dir/src/systems/PowerUpSystem.cpp.o: \
   /usr/local/include/SFML/Audio/SoundRecorder.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.inl \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../core/../systems/HighScoreTable.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../core/../systems/HighScoreTable.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \

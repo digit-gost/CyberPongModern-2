@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sankhare/Downloads/CyberPongModern-2
+CMAKE_SOURCE_DIR = /Users/sankhare/Documents/CyberPongModern-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sankhare/Downloads/CyberPongModern-2/build
+CMAKE_BINARY_DIR = /Users/sankhare/Documents/CyberPongModern-2/build
 
 # Utility rule file for memcheck.
 
@@ -85,6 +85,6 @@ CMakeFiles/memcheck.dir/clean:
 .PHONY : CMakeFiles/memcheck.dir/clean
 
 CMakeFiles/memcheck.dir/depend:
-	cd /Users/sankhare/Downloads/CyberPongModern-2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sankhare/Downloads/CyberPongModern-2 /Users/sankhare/Downloads/CyberPongModern-2 /Users/sankhare/Downloads/CyberPongModern-2/build /Users/sankhare/Downloads/CyberPongModern-2/build /Users/sankhare/Downloads/CyberPongModern-2/build/CMakeFiles/memcheck.dir/DependInfo.cmake "--color=$(COLOR)" memcheck
+	cd /Users/sankhare/Documents/CyberPongModern-2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sankhare/Documents/CyberPongModern-2 /Users/sankhare/Documents/CyberPongModern-2 /Users/sankhare/Documents/CyberPongModern-2/build /Users/sankhare/Documents/CyberPongModern-2/build /Users/sankhare/Documents/CyberPongModern-2/build/CMakeFiles/memcheck.dir/DependInfo.cmake "--color=$(COLOR)" memcheck
 .PHONY : CMakeFiles/memcheck.dir/depend
 

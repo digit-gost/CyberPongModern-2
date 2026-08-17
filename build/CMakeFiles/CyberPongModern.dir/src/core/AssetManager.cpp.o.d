@@ -1,6 +1,6 @@
 CMakeFiles/CyberPongModern.dir/src/core/AssetManager.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/AssetManager.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/AssetManager.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \

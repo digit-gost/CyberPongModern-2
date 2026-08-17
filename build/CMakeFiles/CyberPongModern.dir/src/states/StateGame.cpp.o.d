@@ -1,7 +1,7 @@
 CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGame.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/State.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/StateGame.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/StateGame.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/State.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -898,24 +898,24 @@ CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/GameMode.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Entity.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/PhysicsSystem.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/AIController.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/ScoreSystem.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/PowerUpSystem.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/PowerUp.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../systems/../entities/Entity.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../ui/HUD.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StatePause.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/StateGameOver.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Game.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/AudioManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/GameMode.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../entities/Ball.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/PhysicsSystem.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/../entities/Ball.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/../entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/AIController.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/ScoreSystem.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/PowerUpSystem.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/../entities/PowerUp.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../systems/../entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../ui/HUD.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/StatePause.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/StateGameOver.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../core/Game.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../core/AssetManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../core/AudioManager.h \
   /usr/local/include/SFML/Audio.hpp \
   /usr/local/include/SFML/Audio/InputSoundFile.hpp \
   /usr/local/include/SFML/Audio/Export.hpp \
@@ -936,5 +936,5 @@ CMakeFiles/CyberPongModern.dir/src/states/StateGame.cpp.o: \
   /usr/local/include/SFML/Audio/SoundRecorder.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.inl \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/../systems/HighScoreTable.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/states/../core/Paths.h
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../core/../systems/HighScoreTable.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/states/../core/Paths.h

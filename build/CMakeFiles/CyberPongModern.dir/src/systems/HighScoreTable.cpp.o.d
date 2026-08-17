@@ -1,6 +1,6 @@
 CMakeFiles/CyberPongModern.dir/src/systems/HighScoreTable.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/HighScoreTable.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/HighScoreTable.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/HighScoreTable.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/HighScoreTable.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

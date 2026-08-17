@@ -1,7 +1,7 @@
 CMakeFiles/CyberPongModern.dir/src/entities/PowerUp.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/PowerUp.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/PowerUp.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/PowerUp.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/PowerUp.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Entity.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \

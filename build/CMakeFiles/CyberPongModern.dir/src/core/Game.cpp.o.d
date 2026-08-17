@@ -1,6 +1,6 @@
 CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/Game.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/Game.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/Game.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -897,8 +897,8 @@ CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AssetManager.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/AudioManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/AssetManager.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/AudioManager.h \
   /usr/local/include/SFML/Audio.hpp \
   /usr/local/include/SFML/Audio/InputSoundFile.hpp \
   /usr/local/include/SFML/Audio/Export.hpp \
@@ -919,10 +919,10 @@ CMakeFiles/CyberPongModern.dir/src/core/Game.cpp.o: \
   /usr/local/include/SFML/Audio/SoundRecorder.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
   /usr/local/include/SFML/Audio/SoundFileFactory.inl \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../systems/HighScoreTable.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/State.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/StateMenu.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/AIController.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/../entities/Entity.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/core/../states/../systems/../entities/Ball.h
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../systems/HighScoreTable.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../states/State.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../states/StateMenu.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../states/../systems/AIController.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../states/../systems/../entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../states/../systems/../entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/core/../states/../systems/../entities/Ball.h

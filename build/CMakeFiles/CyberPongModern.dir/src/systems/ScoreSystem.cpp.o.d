@@ -1,8 +1,8 @@
 CMakeFiles/CyberPongModern.dir/src/systems/ScoreSystem.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/ScoreSystem.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/ScoreSystem.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Paddle.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/systems/../entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/ScoreSystem.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/ScoreSystem.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Paddle.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/systems/../entities/Entity.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \

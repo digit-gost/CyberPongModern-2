@@ -1,7 +1,7 @@
 CMakeFiles/CyberPongModern.dir/src/entities/Ball.cpp.o: \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Ball.cpp \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Ball.h \
-  /Users/sankhare/Downloads/CyberPongModern-2/src/entities/Entity.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Ball.cpp \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Ball.h \
+  /Users/sankhare/Documents/CyberPongModern-2/src/entities/Entity.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
